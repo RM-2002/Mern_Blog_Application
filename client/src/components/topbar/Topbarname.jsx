@@ -5,7 +5,7 @@ import { Context } from "../../context/Context";
 
 export default function Topbar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://mern-blog-application.vercel.app/images/"
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
