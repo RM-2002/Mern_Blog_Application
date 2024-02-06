@@ -19,7 +19,13 @@ const app = express();
 
 dotenv.config();
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://mern-blog-application.vercel.app/"],
+        methods: ["POST", "GET", "PUT" , "DELETE" , "PATCH" , ""],
+        credentials: true
+    }
+));
 
 
 app.use(express.json());
